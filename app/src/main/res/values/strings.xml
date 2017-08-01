@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">IRN</string>
+
+    <!--Main-->
+    <string name="main.menu.update">Actualizar</string>
+    <string name="main.menu.show_tables">Ver tablas</string>
 </resources>
