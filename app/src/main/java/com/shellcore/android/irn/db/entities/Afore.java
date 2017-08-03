@@ -106,4 +106,8 @@ public class Afore extends BaseModel {
             return vigencia;
         }
     }
+
+    public String getStrRendimientoNeto() {
+        return "" + rendimientoNeto + "%";
+    }
 }

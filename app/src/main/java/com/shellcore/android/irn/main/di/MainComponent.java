@@ -1,6 +1,6 @@
 package com.shellcore.android.irn.main.di;
 
-import com.shellcore.android.irn.MainActivity;
+import com.shellcore.android.irn.main.ui.MainActivity;
 import com.shellcore.android.irn.libs.di.LibsModule;
 
 import javax.inject.Singleton;

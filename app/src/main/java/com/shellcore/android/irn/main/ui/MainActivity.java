@@ -1,5 +1,6 @@
-package com.shellcore.android.irn;
+package com.shellcore.android.irn.main.ui;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.Snackbar;
@@ -12,10 +13,12 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import com.shellcore.android.irn.IRNApp;
+import com.shellcore.android.irn.R;
 import com.shellcore.android.irn.libs.base.ImageLoader;
+import com.shellcore.android.irn.lists.IRNListActivity;
 import com.shellcore.android.irn.main.MainPresenter;
 import com.shellcore.android.irn.main.di.MainComponent;
-import com.shellcore.android.irn.main.ui.MainView;
 
 import javax.inject.Inject;
 
@@ -73,8 +76,7 @@ public class MainActivity extends AppCompatActivity implements MainView {
                 presenter.updateIrnList();
                 break;
             case R.id.action_show_tables:
-                Snackbar.make(content, "Clicked", Snackbar.LENGTH_SHORT)
-                        .show();
+                navigateToListScreen();
                 break;
         }
 
@@ -124,5 +126,9 @@ public class MainActivity extends AppCompatActivity implements MainView {
         IRNApp app = (IRNApp) getApplication();
         MainComponent component = app.getMainComponent(this, this);
         component.inject(this);
+    }
+
+    private void navigateToListScreen() {
+        startActivity(new Intent(this, IRNListActivity.class));
     }
 }
