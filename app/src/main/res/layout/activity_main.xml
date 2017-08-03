@@ -49,7 +49,8 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/txt_status"
             android:layout_centerInParent="true"
-            android:layout_margin="@dimen/default_margin" />
+            android:layout_margin="@dimen/default_margin"
+            android:visibility="gone" />
 
     </RelativeLayout>
 </android.support.design.widget.CoordinatorLayout>

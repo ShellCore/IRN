@@ -19,8 +19,8 @@ public class GlideImageLoader implements ImageLoader {
     }
 
     @Override
-    public void load(ImageView view, String url) {
-        glideRecuestManager.load(url)
+    public void load(ImageView view, int drawable) {
+        glideRecuestManager.load(drawable)
                 .diskCacheStrategy(DiskCacheStrategy.ALL)
                 .centerCrop()
                 .into(view);
