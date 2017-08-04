@@ -4,4 +4,14 @@
     <!--Main-->
     <string name="main.menu.update">Actualizar</string>
     <string name="main.menu.show_tables">Ver tablas</string>
+    <string name="list.table.afores">AFORES</string>
+    <string name="list.table.rendimiento">RENDIMIENTO NETO</string>
+    <string name="sb4">SB4</string>
+    <string name="sb3">SB3</string>
+    <string name="sb2">SB2</string>
+    <string name="sb1">SB1</string>
+    <string name="sb4_range">36 años o menos</string>
+    <string name="sb3_range">37 a 45 años</string>
+    <string name="sb2_range">46 a 59 años</string>
+    <string name="sb1_range">60 años y mayores</string>
 </resources>

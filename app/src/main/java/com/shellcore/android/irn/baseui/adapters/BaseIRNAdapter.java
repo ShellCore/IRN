@@ -34,6 +34,7 @@ public class BaseIRNAdapter extends RecyclerView.Adapter<BaseIRNAdapter.ViewHold
         Afore afore = list.get(position);
         holder.txtAforeName.setText(afore.getDescripcionCorta());
         holder.txtAforeRendimiento.setText(afore.getStrRendimientoNeto());
+
     }
 
     @Override
