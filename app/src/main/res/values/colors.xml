@@ -9,4 +9,9 @@
     <color name="colorIrn2">#4060C0</color>
     <color name="colorIrn3">#E08000</color>
     <color name="colorIrn4">#40A040</color>
+
+    <!--Validación-->
+    <color name="good">#346e5f</color>
+    <color name="warning">#8f7239</color>
+    <color name="error">#8e3232</color>
 </resources>

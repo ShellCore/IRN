@@ -86,11 +86,13 @@ public class MainActivity extends AppCompatActivity implements MainView {
     @Override
     public void showStatusImage() {
         imgStatus.setVisibility(View.VISIBLE);
+        txtStatus.setVisibility(View.VISIBLE);
     }
 
     @Override
     public void hideStatusImage() {
         imgStatus.setVisibility(View.GONE);
+        txtStatus.setVisibility(View.GONE);
     }
 
     @Override
@@ -106,18 +108,22 @@ public class MainActivity extends AppCompatActivity implements MainView {
     @Override
     public void onIrnTableSucess() {
         imageLoader.load(imgStatus, R.drawable.calendar_good);
+        txtStatus.setText(R.string.irn_good);
+        txtStatus.setTextColor(getResources().getColor(R.color.good));
     }
 
     @Override
     public void onGetIrnTablesWarning(String error) {
         imageLoader.load(imgStatus, R.drawable.calendar_warning);
-        Snackbar.make(content, error, Snackbar.LENGTH_SHORT)
-                .show();
+        txtStatus.setText(R.string.irn_warning);
+        txtStatus.setTextColor(getResources().getColor(R.color.warning));
     }
 
     @Override
     public void onGetIrnTablesError(String error) {
         imageLoader.load(imgStatus, R.drawable.calendar_error);
+        txtStatus.setText(R.string.irn_error);
+        txtStatus.setTextColor(getResources().getColor(R.color.error));
         Snackbar.make(content, error, Snackbar.LENGTH_SHORT)
                 .show();
     }

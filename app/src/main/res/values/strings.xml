@@ -14,4 +14,7 @@
     <string name="sb3_range">37 a 45 años</string>
     <string name="sb2_range">46 a 59 años</string>
     <string name="sb1_range">60 años y mayores</string>
+    <string name="irn_good">Las tablas de rendimiento neto se encuentran vigentes</string>
+    <string name="irn_warning">La vigencia de los rendimientos ha vencido</string>
+    <string name="irn_error">No se cuentan con datos registrados en la aplicación</string>
 </resources>
