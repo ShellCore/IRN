@@ -15,4 +15,4 @@ La aplicación fue desarrollada con las siguientes características:
 - _Retrofit_: Consulta de servicios REST
 - _Eventbus_: Manejo de eventos
 
-[logo]:https://github.com/ShellCore/ShellForkRecipes/raw/master/app/src/main/res/mipmap-mdpi/ic_launcher.png "IRN Logo"
+[logo]:https://github.com/ShellCore/IRN/raw/master/app/src/main/res/mipmap-mdpi/ic_launcher.png "IRN Logo"
